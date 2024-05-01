@@ -1,0 +1,145 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+}
+
+.navbar {
+  background-color: #ff6f61; /* 90s Red */
+  padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+  color: #ffe45e; /* 90s Yellow */
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: #8ac926; /* 90s Green */
+  font-size: 1.1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #1982c4; /* 90s Blue */
+}
+
+.hero-section {
+  background-image: url("retro_background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero-content {
+  max-width: 600px;
+}
+
+.about-me {
+  padding: 50px 0;
+}
+.about-me h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+.about-me p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.projects-container {
+  max-width: 900px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.testing {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.testing h3 {
+  margin:5rem 0;
+}
+
+.projects-container img {
+  width:100%;
+}
+
+.project {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+.project-description {
+  display: none;
+  margin-top: 10px;
+}
+
+.project-description p {
+  margin-bottom: 0;
+}
+
+.project:hover .project-description {
+  display: block;
+}
+
+/* Footer Section */
+.footer {
+  background-color: #8a2be2; /* Purple */
+  padding: 20px;
+  text-align: center;
+
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 18px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #ff00ff; /* Magenta */
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .footer-container {
+    font-size: 1.2rem;
+  }
+}
